@@ -5,8 +5,8 @@ async fn main() -> Result<(), Error> {
     let mut r = Runner::new("om");
 
     // nodes (VMs)
-    let om1 = r.node("rain-om1", "helios-1.3", 8, gb(12));
-    let om2 = r.node("rain-om2", "helios-1.3", 8, gb(12));
+    let om1 = r.node("rain_om1", "helios-1.3", 8, gb(12));
+    let om2 = r.node("rain_om2", "helios-1.3", 8, gb(12));
 
     // Provide a link between hosts
     // This is interface `vioif0` inside the nodes
